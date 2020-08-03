@@ -1,25 +1,32 @@
 body{
     background-image: url(/MiArtistaFavorito/static/bgImage.jpg); 
+    margin: 0;
 }
 
 .firstSong{
-    padding: 2px;
-    position: absolute;
+    padding: 1px;
     border-radius: 600px; 
+    position: absolute;
+    right: 20px;
+    margin-top: 8px;
 }
 
 .container {
+    padding: 0.5%;
     background-color: #CCBB9F;
-    width: 86%;
-    margin: 0 auto;
-    padding-top: 5%;
+    width: 80%;
+    margin: 1% auto;
+    padding-top: 4%;
     font-family: 'Comic Neue', cursive;
     border-radius: 4px;
 }
 
 .divheader{
     text-align: center;
-    position: relative;
+}
+
+.firstImg {
+    max-width: 100%;
 }
 
 .content {
@@ -28,28 +35,41 @@ body{
     text-align: justify; 
 }
 
-.titulos-h1{
+.titulos-h1 {
     font-weight: bolder;
     color: #291705;
     font-family: 'Indie Flower', cursive;
     text-align: center;
 }
 
-.section-bestsongs, .section-discography, .section-biography, .section-members {
+.section-biography, .section-discography, .section-bestsongs {
     color: #5a4118;
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
+    justify-content: space-evenly; 
+}
+
+.section-members{
+    margin: 0;
+    color: #5a4118;
+    text-align: justify;
+
 }
 
 .list-members{
     list-style: none;
-    line-height: 2rem;
     text-align: left;
+}
+
+li::before {
+    content: "\1F399";
+    font-size: 20px;
+    color: black;    
 }
 
 .divDiscography{
     text-align: center;
+    padding: 8px; 
 }
 
 .imag{
@@ -104,27 +124,28 @@ body{
     width: 40px;
     height: 36px;
     border-radius: 50%;
-    position: relative;
 }
 
-.img-web{
-    position: relative;
+.fa-github {
+    margin: 0 auto;
+    color: black;
 }
 
 .container-websites{
-    text-decoration: none;
-    line-height: 2rem;
-    flex-wrap: inherit;
-    text-align: center;
-    justify-content: center;
+    line-height: 1rem;
+    text-align: right;
+    flex-wrap: wrap; 
+    /*border: 3px solid green;*/
 }
 
-.container-websites, .container-footer{
+.container-footer{
+    /*border: 1px solid red;*/
     text-align: right;
+    max-width: 100%;
+    justify-content: space-between;
 }
 
 footer::before{
     content: "\00A9";
-    color:black 3px solid;
     font-size: 18px;
 }
