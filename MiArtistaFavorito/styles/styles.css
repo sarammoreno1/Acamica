@@ -22,29 +22,24 @@ body{
     position: relative;
 }
 
-.content{
+.content {
     width: 80%;
     margin: 0 auto;
     text-align: justify; 
 }
 
-h1{
-    color: #807563;
-    text-align: center;
-    font-family: 'Lobster', cursive;
-}
-
-h2{
-    font-weight: bold;
-    padding: 1%;
-    color: #807563;
+.titulos-h1{
+    font-weight: bolder;
+    color: #291705;
     font-family: 'Indie Flower', cursive;
+    text-align: center;
 }
 
-.section-biography, .section-members{
-    color: #805208;
+.section-bestsongs, .section-discography, .section-biography, .section-members {
+    color: #5a4118;
+    display: flex;
     justify-content: space-around;
-    flex-wrap: wrap;
+    flex-wrap: wrap; 
 }
 
 .list-members{
@@ -53,11 +48,6 @@ h2{
     text-align: left;
 }
 
-.section-bestsongs, .section-discography {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;   
-}
 .divDiscography{
     text-align: center;
 }
