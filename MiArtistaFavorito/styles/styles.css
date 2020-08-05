@@ -1,18 +1,18 @@
 body{
     background-image: url(/MiArtistaFavorito/static/bgImage.jpg); 
     margin: 0;
+    position: absolute;
 }
 
 .firstSong{
     padding: 1px;
     border-radius: 600px; 
-    position: absolute;
+    position: inherit;
     right: 20px;
-    margin-top: 8px;
+    margin-top: 10px;
 }
 
 .container {
-    padding: 0.5%;
     background-color: #CCBB9F;
     width: 80%;
     margin: 1% auto;
@@ -23,6 +23,39 @@ body{
 
 .divheader{
     text-align: center;
+}
+
+header{
+    z-index: 100;
+    position: relative;
+
+}
+
+.div-navbar{
+    margin: 0 auto;
+    width: 100%;
+    height: 100%;
+}
+
+.navbar{
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 50px;
+    background-color: black;
+    top: 0;
+    margin: 0 auto;
+}
+
+.section-nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    margin:0 auto;
 }
 
 .firstImg {
@@ -42,18 +75,17 @@ body{
     text-align: center;
 }
 
-.section-biography, .section-discography, .section-bestsongs {
+.section-nav, .section-biography, .section-discography, .section-bestsongs {
     color: #5a4118;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly; 
+    text-decoration: none;
 }
 
 .section-members{
     margin: 0;
     color: #5a4118;
-    text-align: justify;
-
 }
 
 .list-members{
@@ -62,7 +94,7 @@ body{
     display: inline;
 }
 
-li::before {
+.list-members li::before {
     content: "\1F399";
     font-size: 20px;
     color: black;    
@@ -145,9 +177,42 @@ li::before {
     text-align: right;
     max-width: 100%;
     justify-content: space-between;
+    padding-right: 2px;
 }
 
 footer::before{
     content: "\00A9";
     font-size: 18px;
+}
+
+.up{
+    position: fixed;
+    bottom: 15px;
+    left: 25px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #CCBB9F;
+}
+
+.up a{
+    font-weight: bolder;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-decoration: none;
+}
+
+@media(max-width:600px){
+    .firstSong{
+        right: 2px;
+    }  
+}
+
+@media (max-width:1200px){
+    .firstSong{
+        right: 2px;
+   } 
 }

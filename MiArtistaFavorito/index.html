@@ -12,12 +12,25 @@
     <title>My Favorite Artist</title>
 </head>
 <body>
-    <iframe class="firstSong" src="https://open.spotify.com/embed/track/0UHmxh6g5tTFZgA45SAylI" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
+    <iframe class="firstSong" id="firstSong" src="https://open.spotify.com/embed/track/0UHmxh6g5tTFZgA45SAylI" width="80" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>  
     <div class="container">
         <!--Header-->
         <div class="divheader">
             <header>
-                <img class="firstImg" src="static/pngegg.png" alt="" width="620" height="280"> 
+                <div class="div-navbar">
+                    <nav class="navbar">
+                        <ul class="section-nav">
+                            <li><a class="section-nav" href="#logo">Biography</a></li>
+                            <li><a class="section-nav" href="#sec-members">Members</a></li>
+                            <li><a class="section-nav" href="#sec-disco">Discography</a></li>
+                            <li><a class="section-nav" href="#sec-songs">Top Song</a></li>
+                            <li><a class="section-nav" href="#footer">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="div-logo">
+                    <img class="firstImg" id="logo" src="static/pngegg.png" alt="" width="620" height="280">
+                </div> 
             </header>
         </div>
         <!--Content-->
@@ -30,11 +43,11 @@
             </p>
             </section>
             <!--Members-->
-            <h1 class="titulos-h1">Members</h1>
+            <h1 class="titulos-h1" id="sec-members">Members</h1>
             <section class="section-members">
                 <ul class="list-members">
-                    <li class="li-vocal">Jacob Hemphill      (lead vocals, guitar)</li>
-                    <li class="li-guitar">Bobby Lee Jefferson (bass, vocals)</li>
+                    <li>Jacob Hemphill      (lead vocals, guitar)</li>
+                    <li>Bobby Lee Jefferson (bass, vocals)</li>
                     <li>Ryan "Bird" Berty   (drums)</li>
                     <li>Ken Brownell        (percussion)</li>
                     <li>Patrick O'Shea      (keyboards)</li>
@@ -44,7 +57,7 @@
                 </ul> 
             </section>
             <!--Discographic-->
-            <h1 class="titulos-h1">Discography</h1>
+            <h1 class="titulos-h1" id="sec-disco">Discography</h1>
             <section class="section-discography">
                 <div class="divDiscography">
                     <p>Soldiers Of Jah Army EP<br>2000</p>
@@ -96,7 +109,7 @@
                 </div>
             </section>
             <!--Best Songs-->
-            <h1 class="titulos-h1">Best Songs</h1>
+            <h1 class="titulos-h1" id="sec-songs">Best Songs</h1>
             <section class="section-bestsongs">
                 <div class="topSongs">
                     <iframe src="https://open.spotify.com/embed/track/2Y9WfjpGt3kzv7cbRl3s3O" width="250" height="80" frameborder="0" allowtransparency="true" allow="encrypted-media" class="song"></iframe>
@@ -110,7 +123,7 @@
             <br>
         </div>
         <!--Footer-->
-        <div class="container-footer">
+        <div class="container-footer" id="footer">
             <!--Website-->
             <div class="container-websites">
                 <a class="fa fa-youtube" href="https://www.youtube.com/c/soja/featured" target="_blank"></a>
@@ -128,6 +141,9 @@
                 </a>
             </footer>
         </div>
+    </div>
+    <div>
+        <span class="up"><a href="#firstSong">Up</a></span>
     </div>
 </body>
 </html>
