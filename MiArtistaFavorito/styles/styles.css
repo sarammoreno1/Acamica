@@ -59,6 +59,7 @@ body{
 .list-members{
     list-style: none;
     text-align: left;
+    display: inline;
 }
 
 li::before {
@@ -70,6 +71,7 @@ li::before {
 .divDiscography{
     text-align: center;
     padding: 8px; 
+    display: inline;
 }
 
 .imag{
@@ -79,7 +81,7 @@ li::before {
 
 .topSongs, .song{
     max-width: 100%;
-    display: flex;
+    display: inline-flex;
     justify-content: space-around;
     flex-wrap: wrap; 
     padding: 4px;
