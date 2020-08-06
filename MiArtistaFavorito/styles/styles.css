@@ -7,10 +7,10 @@ body{
 .firstSong{
     padding: 1px;
     border-radius: 600px; 
-    position: inherit;
+    position: relative;
     right: 20px;
     margin-top: 10px;
-    z-index: 3px;
+    z-index: 100;
 }
 
 .container {
@@ -214,6 +214,7 @@ footer::before{
 @media(max-width:600px){
     .firstSong{
         right: 2px;
+        transform: ;
     }  
 }
 
