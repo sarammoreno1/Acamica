@@ -1,0 +1,24 @@
+.button {
+  font-size: 32px;
+  border-radius: 15px; }
+
+.button-primary {
+  color: gray;
+  /*@extend %button;*/ }
+.button-secondary {
+  color: red;
+  /*@extend %button;*/ }
+
+div {
+  background-color: #000;
+  color: blue; }
+  div p {
+    font-size: 20px; }
+    div p a {
+      text-decoration: none; }
+      div p a:hover {
+        color: green; }
+    div p span {
+      color: blue; }
+
+/*# sourceMappingURL=styles.css.map */

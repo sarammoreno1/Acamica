@@ -1,0 +1,19 @@
+.main { 
+    font-family: Tahoma;
+  }
+  
+  .primary { 
+    color: black; 
+  }
+  
+  p { 
+    color: grey; 
+  }
+  
+  .secondary { 
+    color: darkkhaki; 
+  }
+  
+  .pink { 
+    color: #FF1493; 
+  }
