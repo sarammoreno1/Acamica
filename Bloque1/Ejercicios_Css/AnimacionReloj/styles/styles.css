@@ -1,0 +1,88 @@
+body{
+    background-color: grey;
+}
+
+.clock { 
+    background: #fff url(/Ejercicios_Css/AnimacionReloj/static/ios_clock.svg) no-repeat center;
+    background-size: 85%;
+    border-radius: 50%;
+    height: 20em;
+    width: 20em;
+    position: relative;
+}
+
+.clock::after {
+    background: black;
+    content: "";
+    position: absolute;
+    height: 16px;
+    width: 16px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% -50%);
+    border-radius: 50%;
+}
+
+.hours-container {
+    position: absolute;
+    top: 20px;
+    left: 13px;
+    right: 0;
+    bottom: 0;
+    animation: rotate 216000s infinite steps(3600);
+}
+
+.hours {
+    background: #000;
+    position: absolute;
+    height: 20%;
+    top: 31%;
+    width: 2%;
+    left: 49.5%;
+    transform-origin: 50% 50%;
+}
+
+.minutes-container {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+    animation: rotate 3600s infinite steps(60);
+}
+
+.minutes {
+    background: #000;
+    position: absolute;
+    height: 32%;
+    top: 18%;
+    width: 1.5%;
+    left: 49.5%;
+    transform-origin: 50% 50%;
+}
+
+.seconds-container {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+    right: 0;
+    bottom: 0;
+    animation: rotate 60s infinite linear;
+}
+
+.seconds {
+    background: #000;
+    position: absolute;
+    height: 40%;
+    top: 10%;
+    width: 0.5%;
+    left: 49.5%;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate {
+    
+    100% {        
+        transform: rotateZ(360deg);
+    }
+}
