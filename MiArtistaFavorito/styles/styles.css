@@ -7,7 +7,7 @@ body{
 .firstSong{
     padding: 1px;
     border-radius: 600px; 
-    position: relative;
+    position: absolute;
     right: 20px;
     margin-top: 10px;
     z-index: 100;
